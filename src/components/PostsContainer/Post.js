@@ -9,6 +9,7 @@ const Post = props => {
 
     const [likes, setLikes] = useState(props.post.likes);
 
+
     const likeClickHandler = () => {
         let newLikes = likes + 1;
         setLikes(newLikes);

@@ -8,7 +8,9 @@ const PostsPage = () => {
 
   return (
       <div className="posts-container-wrapper">
-        {userPosts.map((post) => <Post post={post}/>)}
+          {userPosts.map((post) =>
+              <Post post={post}/>)
+          }
       </div>
   );
 
