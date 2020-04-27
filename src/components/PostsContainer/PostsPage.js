@@ -9,7 +9,7 @@ const PostsPage = () => {
   return (
       <div className="posts-container-wrapper">
           {userPosts.map((post) =>
-              <Post post={post}/>)
+              <Post post={post} key={userPosts.indexOf(post)}/>)
           }
       </div>
   );
